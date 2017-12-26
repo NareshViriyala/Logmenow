@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:id="@+id/sfv_camview"/>
+
+    <!--<ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_scanborder"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_scanStatus"
+        android:gravity="center"
+        android:text="*Searching QR*"
+        android:layout_below="@+id/sfv_camview"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:id="@+id/img_processing"
+        android:visibility="gone"
+        android:src="@drawable/processing"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="    Scan QR   "
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_scanqr"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_scanStatus">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:id="@+id/ll_restaurant"
+                android:background="@drawable/border_popup"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wheeler4"
+                    android:id="@+id/img_restaurant"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="Paradaise food court \nCurrent Menu"
+                    android:id="@+id/tv_restaurant"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ll_callwaiter"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_callwaiter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Waiter"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:textSize="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ll_delete_restaurant"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_delete"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="8dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:id="@+id/ll_hospital"
+                android:background="@drawable/border_popup"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wheeler2"
+                    android:id="@+id/img_hospital"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:text="Apollo Hospitals \nOpen Appointment"
+                    android:id="@+id/tv_hospital"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ll_waitingtime"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_waitingtime"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wait time"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ll_delete_hospital"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_delete"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="8dp"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_popup">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll_timer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/border_popup">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment No"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_appid"
+            android:text="12"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Queue number"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_appstatus"
+            android:text="12"
+            android:textSize="24dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting time"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:23:53"
+            android:textSize="12dp"
+            android:textColor="@color/red"
+            android:id="@+id/tv_timer"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll_timer"
+        android:text="Ok"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_ok"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

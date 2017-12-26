@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:background="@drawable/border_listitem_header"
+            android:text="Veg Biryani"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:id="@+id/tv_grpname"/>
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_itemsearch"
+            android:layout_gravity="fill_horizontal"
+            android:inputType="text"
+            android:visibility="gone"
+            android:theme="@style/MyEditTextTheme"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/colorPrimary"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/ic_search"
+            android:id="@+id/img_itemsearch"/>
+    </RelativeLayout>
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:background="@drawable/border_listitem_header"
+        android:text="Veg Biryani"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/tv_grpname"/>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:dividerHeight="10dp"
+            android:divider="@color/grey"
+            android:id="@+id/lv_items">
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/processing"
+        android:id="@+id/img_loading"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/ll_header">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:text="99"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Total"
+                android:textColor="@color/white"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/hsv_selection">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_selections"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_checkout"
+                android:layout_marginRight="5dp"
+                android:tint="@color/white"
+                android:id="@+id/img_checkout"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/border_popup">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/img_restaurant"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/processing"
+                android:layout_centerInParent="true"
+                android:id="@+id/img_logoprocessing"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/border_popup"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:id="@+id/ll_address">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_address1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_address2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_cscz"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tv_cnt"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:autoLink="email"
+                    android:id="@+id/tv_email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:autoLink="web"
+                    android:id="@+id/tv_web"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/processing"
+                android:layout_centerInParent="true"
+                android:id="@+id/img_dtlprocessing"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_popup"
+        android:id="@+id/ll_businesshours">
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="5dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:text="Business Hours"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tv_busstitle"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/processing"
+            android:id="@+id/img_bhprocessing"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Scan Again"
+                android:gravity="center"
+                android:id="@+id/btn_scanagain"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_scanagain_processing"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:src="@drawable/loading"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Get Menu"
+                android:gravity="center"
+                android:id="@+id/btn_getmenu"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:id="@+id/img_getmenu_processing"
+                android:layout_centerInParent="true"
+                android:src="@drawable/loading"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_btns"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:text="Scan Again"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_scanagain"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:text="Get Menu"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_getmenu"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>-->
+</LinearLayout>

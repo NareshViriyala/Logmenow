@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragment_parking"
+            android:icon="@drawable/ic_parking"
+            android:title="Parking"/>
+        <item
+            android:id="@+id/fragment_membership"
+            android:icon="@drawable/ic_membership"
+            android:title="Membership" />
+        <item
+            android:id="@+id/fragment_restaurant"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Restaurant" />
+        <item
+            android:id="@+id/fragment_profile"
+            android:icon="@drawable/ic_info"
+            android:title="Profile QRs" />
+
+        <item android:title="Near By">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/fragment_hotdeals"
+                        android:icon="@drawable/ic_hotdeals"
+                        android:title="Hot Deals" />
+                    <item
+                        android:id="@+id/fragment_offers"
+                        android:icon="@drawable/ic_offers"
+                        android:title="Offers Near By" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

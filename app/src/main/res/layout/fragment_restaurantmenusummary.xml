@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srv_items">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/ll_resmenu">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:text="Modify Order"
+                        android:gravity="center"
+                        android:id="@+id/btn_modo"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/img_modo_processing"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/loading"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:text="Place Order"
+                        android:gravity="center"
+                        android:id="@+id/btn_plco"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/img_plco_processing"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/loading"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ll_callwaiter"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/ic_callwaiter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Waiter"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:textSize="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

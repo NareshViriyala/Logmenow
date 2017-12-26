@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <!--<color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color> Blue-->
+    <!--<color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#1B5E20</color> Green-->
+    <!--<color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#01579B</color> Light Blue-->
+    <!--<color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#BF360C</color> Deep Orange-->
+    <!--<color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#1B5E20</color> Dark Green-->
+    <!--<color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#6A1B9A</color> Purple-->
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1A237E</color> Indigo-->
+
+    <color name="colorSecondary">#9FA8DA</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="grey">#D3D3D3</color>
+</resources>

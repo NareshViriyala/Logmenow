@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name"><u>Logmenow</u></string>
+    <string name="package_name">com.example.home.logmenow</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="colorprimary">#673AB7</string>
+    <string name="colorwhite">#ffffff</string>
+    <string name="nointernet">Internet Unavailable</string>
+    <string name="spinnerprompt">Select</string>
+    <!--<string name="campermission">need access to CAMERA to scan QR codes.\nWe do not use your device camera for any other purpose.\nFollowing popup message is a standard android warning which you can ignore for this app.</string>-->
+    <string name="campermission">need access to CAMERA to scan QR codes <u><b>ONLY</b></u>.\nFollowing popup message is a standard android warning.\nPlease click ALLOW to proceed</string>
+
+    <!-- navigation drawer item labels  -->
+   <!-- <string-array name="nav_drawer_items">
+        <item>Parking</item>
+        <item>Membership</item>
+        <item>Restaurant</item>
+        <item>Offers Near By</item>
+        <item>Flash Deals</item>
+        <item>Profile</item>
+        <item>Settings</item>
+    </string-array>
+
+
+    <string-array name="nav_drawer_icons">
+        <item>@drawable/ic_parking</item>
+        <item>@drawable/ic_membership</item>
+        <item>@drawable/ic_restaurant</item>
+        <item>@drawable/ic_offers</item>
+        <item>@drawable/ic_hotdeals</item>
+        <item>@drawable/ic_info</item>
+        <item>@drawable/ic_settings</item>
+    </string-array>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
