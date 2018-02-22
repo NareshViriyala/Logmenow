@@ -23,8 +23,8 @@ public class HTTPCallJSon {
     private DBHelper mydb;
     private String PageName = "HTTPCallJSon";
     //private String apiURL = "http://caremetricsdemo.ihealthtechnologies.com/api/";
-    private String apiURL = "http://www.logmenow.com/db_calls/";
-    public String feedbackapiURL = "http://www.logmenow.com/";
+    private String apiURL = "http://54.227.10.115/db_calls/";
+    public String feedbackapiURL = "http://54.227.10.115/";
 
     public HTTPCallJSon(Context context){mydb = new DBHelper(context);}
 
